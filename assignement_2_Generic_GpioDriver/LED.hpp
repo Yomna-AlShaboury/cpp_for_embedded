@@ -1,10 +1,17 @@
+#ifndef LED_H_
+#define LED_H_
+
 #include "GPIO.hpp"
 
-class LED:public GPIO<ARM_GPIO>
+template<typename Base>
+class LED
 {
     public:
-        LED();
-        ~LED();
+        LED();      //default constructor
+        ~LED();     //default destructor
         void LedOn(PortID_t prt,int  pinNum);
         void LedOff(PortID_t prt,int  pinNum);
 };
+
+
+#endif
