@@ -47,3 +47,20 @@ GPIO<Base>::~GPIO(){
 */
 template class GPIO<ARM_GPIO>;
 template class GPIO<AVR_GPIO>;
+
+
+
+
+void AVR_GPIO:: GPIO_SetPinDirection (PortID_t prt,int  pinNum,int direction){
+
+}
+void AVR_GPIO:: GPIO_WriteonPin (PortID_t port,int  pinNum ,int value){
+
+}
+
+void ARM_GPIO:: GPIO_SetPinDirection (PortID_t prt,int  pinNum,int direction){
+    
+}
+void ARM_GPIO:: GPIO_WriteonPin (PortID_t port,int  pinNum ,int value){
+
+}

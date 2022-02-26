@@ -6,6 +6,7 @@
 template<typename Base>
 class LED
 {
+    GPIO<Base> led;                 // GPIO object in LED driver
     public:
         LED();      //default constructor
         ~LED();     //default destructor
